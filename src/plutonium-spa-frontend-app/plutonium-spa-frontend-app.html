@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="plutonium-spa-frontend-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PlutoniumSpaFrontendApp extends Polymer.Element {
+      static get is() { return 'plutonium-spa-frontend-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'plutonium-spa-frontend-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PlutoniumSpaFrontendApp.is, PlutoniumSpaFrontendApp);
+  </script>
+</dom-module>

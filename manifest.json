@@ -1,0 +1,7 @@
+{
+  "name": "plutonium-spa-frontend",
+  "short_name": "plutonium-spa-frontend",
+  "description": "Polymer 2.0 based single page application.",
+  "start_url": "/",
+  "display": "standalone"
+}
